@@ -47,8 +47,6 @@ const services = [
 const benefits = [
   "Licensed & Insured",
   "24/7 Emergency Service",
-  "Affordable Pricing",
-  "Professional Equipment",
   "Fast Response",
   "100% Customer Satisfaction",
 ];
@@ -87,8 +85,8 @@ export default function Home() {
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-[#f7d04633] via-transparent to-[#18a97933]" />
 
-        <div className="relative mx-auto flex max-w-6xl flex-col gap-12 px-5 pb-16 pt-8 sm:px-6 md:pt-10">
-          <nav className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/10 bg-black/70 px-5 py-3 shadow-lg backdrop-blur">
+        <div className="relative mx-auto flex max-w-6xl flex-col gap-10 px-4 pb-16 pt-8 sm:px-6 md:gap-12 md:pt-10">
+          <nav className="flex flex-col gap-3 rounded-2xl border border-white/10 bg-black/70 px-5 py-3 shadow-lg backdrop-blur sm:flex-row sm:items-center sm:justify-between">
             <div className="flex items-center gap-3">
               <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-[#f7d046] to-[#18a979] text-lg font-semibold text-black shadow-lg">
                 BB
@@ -103,7 +101,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex items-center gap-3 text-sm font-medium text-white/80">
+            <div className="flex flex-wrap items-center gap-3 text-sm font-medium text-white/80">
               <a
                 href="#servicios"
                 className="hidden rounded-full border border-white/15 px-4 py-2 transition hover:border-[#f7d046] hover:text-white sm:inline"
@@ -126,15 +124,15 @@ export default function Home() {
             </div>
           </nav>
 
-          <section className="grid items-center gap-10 rounded-3xl border border-white/10 bg-black/70 px-6 py-12 shadow-2xl backdrop-blur md:grid-cols-[1.1fr,0.9fr] md:px-10 md:py-14">
-            <div className="space-y-6">
-              <p className="inline-flex items-center gap-2 rounded-full border border-[#18a979]/30 bg-[#18a979]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#c8ffd5]">
+          <section className="grid items-center gap-8 rounded-3xl border border-white/10 bg-black/70 px-5 py-10 shadow-2xl backdrop-blur sm:px-7 md:grid-cols-[1.05fr,0.95fr] md:gap-10 md:px-10 md:py-14">
+            <div className="space-y-5">
+              <p className="inline-flex w-fit items-center gap-2 rounded-full border border-[#18a979]/30 bg-[#18a979]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-[#c8ffd5]">
                 Expert Tree Removal & Trimming Services
               </p>
-              <h1 className="text-4xl font-semibold leading-tight text-white sm:text-5xl">
+              <h1 className="text-balance text-3xl font-semibold leading-tight text-white sm:text-4xl md:text-5xl">
                 Fast, Safe and Affordable Tree Services in Orlando Metro.
               </h1>
-              <p className="text-lg text-white/80">
+              <p className="text-base text-white/80 sm:text-lg">
                 Licensed, insured, and ready 24/7. Hazardous tree removal,
                 professional trimming, stump grinding, and full cleanup.
               </p>
@@ -169,10 +167,10 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="relative">
-              <div className="absolute inset-0 -left-8 -top-6 rounded-3xl bg-gradient-to-br from-[#f7d046]/25 via-transparent to-[#18a979]/25 blur-2xl" />
-              <div className="relative space-y-4 rounded-3xl border border-white/10 bg-white/5 p-6 shadow-xl">
-                <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/60 p-4">
+            <div className="relative w-full">
+              <div className="absolute inset-0 -left-4 -top-4 rounded-3xl bg-gradient-to-br from-[#f7d046]/25 via-transparent to-[#18a979]/25 blur-2xl sm:-left-8 sm:-top-6" />
+              <div className="relative space-y-4 rounded-3xl border border-white/10 bg-white/5 p-5 shadow-xl sm:p-6">
+                <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/10 bg-black/60 p-4">
                   <div>
                     <p className="text-sm uppercase tracking-[0.18em] text-white/60">
                       Phone
@@ -189,7 +187,7 @@ export default function Home() {
                   </a>
                 </div>
 
-                <div className="flex items-center justify-between rounded-2xl border border-white/10 bg-black/60 p-4">
+                <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-white/10 bg-black/60 p-4">
                   <div>
                     <p className="text-sm uppercase tracking-[0.18em] text-white/60">
                       Email
@@ -204,15 +202,6 @@ export default function Home() {
                   </a>
                 </div>
 
-                <div className="rounded-2xl border border-white/10 bg-gradient-to-br from-[#f7d046]/10 to-[#18a979]/10 p-4 text-white">
-                  <p className="text-sm font-semibold uppercase tracking-[0.15em] text-white/70">
-                    Coverage
-                  </p>
-                  <p className="text-lg">
-                    Serving Orlando and surrounding areas. Under 2-hour arrival
-                    for emergencies.
-                  </p>
-                </div>
               </div>
             </div>
           </section>
@@ -306,9 +295,6 @@ export default function Home() {
             "https://images.unsplash.com/photo-1510960236809-3e2af7c3455f?auto=format&fit=crop&w=900&q=80",
             "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80",
             "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80",
-            "https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=900&q=80",
-            "https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=900&q=80",
-            "https://images.unsplash.com/photo-1510960236809-3e2af7c3455f?auto=format&fit=crop&w=900&q=80",
           ].map((url, idx) => (
             <div
               key={idx}
